@@ -59,14 +59,14 @@ This project demonstrates how machine learning systems move from experimentation
 
 ## 🚀 Project Architecture
 <p>
-- Data → Preprocessing → Model Training → Model Evaluation → Saved Model → FastAPI → Docker → Deployment
+Data → Preprocessing → Model Training → Model Evaluation → Saved Model → FastAPI → Docker → Deployment
 </p>
-
+add
 ## 📊 Use Case
 
 <p>
 
-# Insurance companies can:
+### Insurance companies can:
 <br/>
 <br/>
 - Predict claim approval probability
