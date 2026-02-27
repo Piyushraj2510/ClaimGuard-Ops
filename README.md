@@ -67,19 +67,34 @@ This project demonstrates how machine learning systems move from experimentation
 <p>
 Data → Preprocessing → Model Training → Model Evaluation → Saved Model → FastAPI → Docker → Deployment
 </p>
-## 📊 Use Case
 
-<p>
+---
+## 🧩 Use Cases
 
-### Insurance companies can:
-<br/>
-<br/>
-- Predict claim approval probability
-<br/>
-- Estimate risk level
-<br/>
-- Reduce fraudulent claims
-<br/>
-- Automate claim processing decisions
-<br/>
-</p>
+Insurance companies and platforms can leverage this project to:
+
+✅ **Predict Claim Approval Probability** – Estimate likelihood of claim approvals based on historical data. :contentReference[oaicite:2]{index=2}  
+✅ **Estimate Risk Levels** – Identify high-risk claims requiring manual review. :contentReference[oaicite:3]{index=3}  
+✅ **Reduce Fraudulent Claims** – Flag suspicious claims automatically. :contentReference[oaicite:4]{index=4}  
+✅ **Automate Claim Processing Decisions** – Reduce manual workload for claim adjusters. :contentReference[oaicite:5]{index=5}
+
+---
+## ⚙️ How to Run Locally
+
+Follow these steps to set up and run ClaimGuard-Ops on your machine.
+
+### 🔹 Prerequisites
+
+Make sure you have:
+
+✔ Python 3.8+  
+✔ Docker & Docker Compose  
+✔ Git
+
+---
+
+### 🔹 Clone the Repo
+
+```bash
+git clone https://github.com/Piyushraj2510/ClaimGuard-Ops.git
+cd ClaimGuard-Ops
