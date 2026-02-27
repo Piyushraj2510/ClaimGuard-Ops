@@ -93,7 +93,6 @@ Make sure you have:
 ✔ Git
 
 ---
-
 ### 🔹 Clone the Repo
 
 ```bash
@@ -118,8 +117,7 @@ pip install -r requirements.txt
 ```
 
 ---
-
-###🔹 Run the API
+### 🔹 Run the API
 
 ```bash
 uvicorn app:app --reload
@@ -128,7 +126,7 @@ Visit: http://localhost:8000 in your browser.
 
 ---
 
-###🔹 Using Docker
+### 🔹 Using Docker
 
 Build and run the container:
 
@@ -142,13 +140,13 @@ This ensures your environment mirrors the production setup.
 
 ---
 
-##📝 Contribute 🚀
+## 📝 Contribute 🚀
 
 We welcome contributions! Here’s how you can help improve ClaimGuard-Ops:
 
 ---
 
-###📌 Suggested Improvements
+### 📌 Suggested Improvements
 
 ✔ Add more datasets for diverse insurance scenarios
 ✔ Improve model accuracy with new algorithms
@@ -157,7 +155,7 @@ We welcome contributions! Here’s how you can help improve ClaimGuard-Ops:
 
 ---
 
-###💡 How to Submit a Pull Request
+### 💡 How to Submit a Pull Request
 
 1.Fork the repo
 
@@ -179,6 +177,6 @@ git push origin feature/my-awesome-feature
 5.Open a Pull Request describing your change
 
 ---
----
+
 
 g
