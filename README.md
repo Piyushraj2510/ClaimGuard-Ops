@@ -32,6 +32,7 @@ This project demonstrates how machine learning systems move from experimentation
 🔗 **Live Website / Deployment:**  
 (http://3.92.18.19:5000/) 
 
+---
 
 ## 🛠 Built with the tools and technologies:
 
@@ -91,7 +92,7 @@ Make sure you have:
 ✔ Docker & Docker Compose  
 ✔ Git
 
----
+
 
 ### 🔹 Clone the Repo
 
@@ -99,7 +100,7 @@ Make sure you have:
 git clone https://github.com/Piyushraj2510/ClaimGuard-Ops.git
 cd ClaimGuard-Ops
 ```
----
+
 ### 🔹 Install Dependencies
 
 Using a Python virtual environment:
@@ -112,7 +113,7 @@ venv\Scripts\activate         # Windows
 ```bash
 pip install -r requirements.txt
 ```
----
+
 ###🔹 Run the API
 
 ```bash
@@ -131,6 +132,8 @@ docker run -p 8000:8000 claimguard-ops
 Now open: http://localhost:8000
 
 This ensures your environment mirrors the production setup.
+
+---
 
 ##📝 Contribute 🚀
 
@@ -162,6 +165,8 @@ git commit -m "Add awesome new feature"
 ```bash
 git push origin feature/my-awesome-feature
 ```
-5.Open a Pull Request describing your chan
+5.Open a Pull Request describing your change
+
+---
 
 ge
