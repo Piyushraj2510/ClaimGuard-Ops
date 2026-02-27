@@ -27,6 +27,12 @@ This project demonstrates how machine learning systems move from experimentation
 
 ---
 
+## 🚀 Live Demo
+
+🔗 **Live Website / Deployment:**  
+(http://3.92.18.19:5000/) 
+
+
 ## 🛠 Built with the tools and technologies:
 
 <p align="center">
