@@ -1,176 +1,157 @@
-<h1 align="center">🚗 CLAIMGUARD-OPS</h1>
+# MLOps Project - Vehicle Insurance Data Pipeline
 
-<p align="center">
-  <i>Transforming Vehicle Insurance Data into Actionable Insights Instantly</i>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/last-commit/Piyushraj2510/ClaimGuard-Ops?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/top/Piyushraj2510/ClaimGuard-Ops?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/count/Piyushraj2510/ClaimGuard-Ops?style=flat-square" />
-</p>
+Welcome to this MLOps project, designed to demonstrate a robust pipeline for managing vehicle insurance data. This project aims to impress recruiters and visitors by showcasing the various tools, techniques, services, and features that go into building and deploying a machine learning pipeline for real-world data management. Follow along to learn about project setup, data processing, model deployment, and CI/CD automation!
 
 ---
 
-## 📌 About the Project
+## 📁 Project Setup and Structure
 
-ClaimGuard-Ops is a production-ready **Vehicle Insurance Claim Prediction System** built using modern **MLOps practices**.
+### Step 1: Project Template
+- Start by executing the `template.py` file to create the initial project template, which includes the required folder structure and placeholder files.
 
-It includes:
-- 📊 Data preprocessing pipeline  
-- 🧠 Model training & evaluation  
-- 🚀 API-based deployment  
-- 🐳 Docker containerization  
-- 🔁 CI/CD integration  
+### Step 2: Package Management
+- Write the setup for importing local packages in `setup.py` and `pyproject.toml` files.
+- **Tip**: Learn more about these files from `crashcourse.txt`.
 
-This project demonstrates how machine learning systems move from experimentation to production.
-
----
-
-## 🚀 Live Demo
-
-🔗 **Live Website / Deployment:**  
-(http://3.92.18.19:5000/) 
-
----
-
-## 🛠 Built with the tools and technologies:
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/JSON-black?style=for-the-badge&logo=json" />
-<img src="https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown" />
-<img src="https://img.shields.io/badge/npm-red?style=for-the-badge&logo=npm" />
-<img src="https://img.shields.io/badge/TOML-brown?style=for-the-badge" />
-<br/>
-<img src="https://img.shields.io/badge/scikit--learn-orange?style=for-the-badge&logo=scikit-learn" />
-<img src="https://img.shields.io/badge/esbuild-yellow?style=for-the-badge&logo=esbuild" />
-<img src="https://img.shields.io/badge/FastAPI-teal?style=for-the-badge&logo=fastapi" />
-<img src="https://img.shields.io/badge/NumPy-darkblue?style=for-the-badge&logo=numpy" />
-<br/>
-<img src="https://img.shields.io/badge/AWS-orange?style=for-the-badge&logo=amazon-aws" />
-<img src="https://img.shields.io/badge/MongoDB-green?style=for-the-badge&logo=mongodb" />
-<img src="https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker" />
-<img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python" />
-<br/>
-<img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript" />
-<img src="https://img.shields.io/badge/Plotly-darkblue?style=for-the-badge&logo=plotly" />
-<img src="https://img.shields.io/badge/BAT-grey?style=for-the-badge" />
-<img src="https://img.shields.io/badge/pandas-purple?style=for-the-badge&logo=pandas" />
-<br/>
-<img src="https://img.shields.io/badge/YAML-red?style=for-the-badge&logo=yaml" />
-
-</p>
+### Step 3: Virtual Environment and Dependencies
+- Create a virtual environment and install required dependencies from `requirements.txt`:
+  ```bash
+  conda create -n vehicle python=3.10 -y
+  conda activate vehicle
+  pip install -r requirements.txt
+  ```
+- Verify the local packages by running:
+  ```bash
+  pip list
+  ```
 
 ---
 
-## 🚀 Project Architecture
-<p>
-Data → Preprocessing → Model Training → Model Evaluation → Saved Model → FastAPI → Docker → Deployment
-</p>
+## 📊 MongoDB Setup and Data Management
 
----
-## 🧩 Use Cases
+### Step 4: MongoDB Atlas Configuration
+1. Sign up for [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and create a new project.
+2. Set up a free M0 cluster, configure the username and password, and allow access from any IP address (`0.0.0.0/0`).
+3. Retrieve the MongoDB connection string for Python and save it (replace `<password>` with your password).
 
-Insurance companies and platforms can leverage this project to:
-
-✅ **Predict Claim Approval Probability** – Estimate likelihood of claim approvals based on historical data.</br> 
-✅ **Estimate Risk Levels** – Identify high-risk claims requiring manual review. </br> 
-✅ **Reduce Fraudulent Claims** – Flag suspicious claims automatically. </br>
-✅ **Automate Claim Processing Decisions** – Reduce manual workload for claim adjusters.</br>
-
----
-## ⚙️ How to Run Locally
-
-Follow these steps to set up and run ClaimGuard-Ops on your machine.
+### Step 5: Pushing Data to MongoDB
+1. Create a folder named `notebook`, add the dataset, and create a notebook file `mongoDB_demo.ipynb`.
+2. Use the notebook to push data to the MongoDB database.
+3. Verify the data in MongoDB Atlas under Database > Browse Collections.
 
 ---
 
-### 🔹 Prerequisites
+## 📝 Logging, Exception Handling, and EDA
 
-Make sure you have:
+### Step 6: Set Up Logging and Exception Handling
+- Create logging and exception handling modules. Test them on a demo file `demo.py`.
 
-✔ Python 3.8+  
-✔ Docker & Docker Compose  
-✔ Git
-
-
-### 🔹 Clone the Repo
-
-```bash
-git clone https://github.com/Piyushraj2510/ClaimGuard-Ops.git
-cd ClaimGuard-Ops
-```
-
-### 🔹 Install Dependencies
-
-Using a Python virtual environment:
-
-```bash
-python -m venv venv
-source venv/bin/activate      # Mac / Linux
-venv\Scripts\activate         # Windows
-```
-
-```bash
-pip install -r requirements.txt
-```
-
-### 🔹 Run the API
-
-```bash
-uvicorn app:app --reload
-```
-Visit: http://localhost:8000 in your browser.
-
-
-### 🔹 Using Docker
-
-Build and run the container:
-
-```bash
-docker build -t claimguard-ops .
-docker run -p 8000:8000 claimguard-ops
-```
-Now open: http://localhost:8000
-
-This ensures your environment mirrors the production setup.
+### Step 7: Exploratory Data Analysis (EDA) and Feature Engineering
+- Analyze and engineer features in the `EDA` and `Feature Engg` notebook for further processing in the pipeline.
 
 ---
 
-## 📝 Contribute 🚀
+## 📥 Data Ingestion
 
-We welcome contributions! Here’s how you can help improve ClaimGuard-Ops:
+### Step 8: Data Ingestion Pipeline
+- Define MongoDB connection functions in `configuration.mongo_db_connections.py`.
+- Develop data ingestion components in the `data_access` and `components.data_ingestion.py` files to fetch and transform data.
+- Update `entity/config_entity.py` and `entity/artifact_entity.py` with relevant ingestion configurations.
+- Run `demo.py` after setting up MongoDB connection as an environment variable.
 
-
-### 📌 Suggested Improvements
-
-✔ Add more datasets for diverse insurance scenarios
-✔ Improve model accuracy with new algorithms
-✔ Add frontend UI for visual predictions
-✔ Expand CI/CD to include automated model validation
-
-
-
-### 💡 How to Submit a Pull Request
-
-1.Fork the repo
-
-2.Create your feature branch
-
-```bash
-git checkout -b feature/my-awesome-feature
-```
-3.Commit your changes
-
-```bash
-git commit -m "Add awesome new feature"
-```
-4.Push to your fork
-
-```bash
-git push origin feature/my-awesome-feature
-```
-5.Open a Pull Request describing your change
+### Setting Environment Variables
+- Set MongoDB URL:
+  ```bash
+  # For Bash
+  export MONGODB_URL="mongodb+srv://<username>:<password>...."
+  # For Powershell
+  $env:MONGODB_URL = "mongodb+srv://<username>:<password>...."
+  ```
+- **Note**: On Windows, you can also set environment variables through the system settings.
 
 ---
+
+## 🔍 Data Validation, Transformation & Model Training
+
+### Step 9: Data Validation
+- Define schema in `config.schema.yaml` and implement data validation functions in `utils.main_utils.py`.
+
+### Step 10: Data Transformation
+- Implement data transformation logic in `components.data_transformation.py` and create `estimator.py` in the `entity` folder.
+
+### Step 11: Model Training
+- Define and implement model training steps in `components.model_trainer.py` using code from `estimator.py`.
+
+---
+
+## 🌐 AWS Setup for Model Evaluation & Deployment
+
+### Step 12: AWS Setup
+1. Log in to the AWS console, create an IAM user, and grant `AdministratorAccess`.
+2. Set AWS credentials as environment variables.
+   ```bash
+   # For Bash
+   export AWS_ACCESS_KEY_ID="YOUR_AWS_ACCESS_KEY_ID"
+   export AWS_SECRET_ACCESS_KEY="YOUR_AWS_SECRET_ACCESS_KEY"
+   ```
+
+3. Configure S3 Bucket and add access keys in `constants.__init__.py`.
+
+### Step 13: Model Evaluation and Pushing to S3
+- Create an S3 bucket named `my-model-mlopsproj` in the `us-east-1` region.
+- Develop code to push/pull models to/from the S3 bucket in `src.aws_storage` and `entity/s3_estimator.py`.
+
+---
+
+## 🚀 Model Evaluation, Model Pusher, and Prediction Pipeline
+
+### Step 14: Model Evaluation & Model Pusher
+- Implement model evaluation and deployment components.
+- Create `Prediction Pipeline` and set up `app.py` for API integration.
+
+### Step 15: Static and Template Directory
+- Add `static` and `template` directories for web UI.
+
+---
+
+## 🔄 CI/CD Setup with Docker, GitHub Actions, and AWS
+
+### Step 16: Docker and GitHub Actions
+1. Create `Dockerfile` and `.dockerignore`.
+2. Set up GitHub Actions with AWS authentication by creating secrets in GitHub for:
+   - `AWS_ACCESS_KEY_ID`
+   - `AWS_SECRET_ACCESS_KEY`
+   - `AWS_DEFAULT_REGION`
+   - `ECR_REPO`
+
+### Step 17: AWS EC2 and ECR
+1. Set up an EC2 instance for deployment.
+2. Install Docker on the EC2 machine.
+3. Connect EC2 as a self-hosted runner on GitHub.
+
+### Step 18: Final Steps
+1. Open the 5080 port on the EC2 instance.
+2. Access the deployed app by visiting `http://<public_ip>:5080`.
+
+---
+
+## 🛠️ Additional Resources
+- **Crash Course on setup.py and pyproject.toml**: See `crashcourse.txt` for details.
+- **GitHub Secrets**: Manage secrets for secure CI/CD pipelines.
+
+---
+
+## 🎯 Project Workflow Summary
+
+1. **Data Ingestion** ➔ **Data Validation** ➔ **Data Transformation**
+2. **Model Training** ➔ **Model Evaluation** ➔ **Model Deployment**
+3. **CI/CD Automation** with GitHub Actions, Docker, AWS EC2, and ECR
+
+---
+
+## 💬 Connect
+If you found this project helpful or have any questions, feel free to reach out!
+
+---
+
+This README provides a structured walkthrough of the MLOps project, showcasing the end-to-end pipeline, cloud integration, CI/CD setup, and robust data handling capabilities.
