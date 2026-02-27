@@ -83,7 +83,7 @@ Insurance companies and platforms can leverage this project to:
 ## ⚙️ How to Run Locally
 
 Follow these steps to set up and run ClaimGuard-Ops on your machine.
-
+---
 ### 🔹 Prerequisites
 
 Make sure you have:
@@ -92,7 +92,7 @@ Make sure you have:
 ✔ Docker & Docker Compose  
 ✔ Git
 
-
+---
 
 ### 🔹 Clone the Repo
 
@@ -100,7 +100,7 @@ Make sure you have:
 git clone https://github.com/Piyushraj2510/ClaimGuard-Ops.git
 cd ClaimGuard-Ops
 ```
-
+---
 ### 🔹 Install Dependencies
 
 Using a Python virtual environment:
@@ -113,14 +113,14 @@ venv\Scripts\activate         # Windows
 ```bash
 pip install -r requirements.txt
 ```
-
+---
 ###🔹 Run the API
 
 ```bash
 uvicorn app:app --reload
 ```
 Visit: http://localhost:8000 in your browser.
-
+---
 ###🔹 Using Docker
 
 Build and run the container:
@@ -138,14 +138,14 @@ This ensures your environment mirrors the production setup.
 ##📝 Contribute 🚀
 
 We welcome contributions! Here’s how you can help improve ClaimGuard-Ops:
-
+---
 ###📌 Suggested Improvements
 
 ✔ Add more datasets for diverse insurance scenarios
 ✔ Improve model accuracy with new algorithms
 ✔ Add frontend UI for visual predictions
 ✔ Expand CI/CD to include automated model validation
-
+---
 ###💡 How to Submit a Pull Request
 
 1.Fork the repo
